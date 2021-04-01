@@ -14,12 +14,25 @@
         <br>
         <div class=center>
             Amount <input type="number" id="principal"> <br />
-            Rate <input type="range" id="rate" onchange="getRangeValue()" min="1" max="20" step="0.25" value="10.25"><span id="rateSpan">10.25</span>% <br />
-            No. of Years <input type="number" id="years" min="1" max="10"> <br />
+            Rate <input type="range" id="rate" onchange="getRangeValue()" min="1" max="20" step="0.25"
+                value="10.25"><span id="rateSpan">10.25</span>% <br />
+            No. of Years <input type="dropdown" id="years" list="year">
+                    <datalist id="year">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist> <br />
             <br>
             <button onclick="compute()">Compute Interest</button>
             <br><br>
-            <span id ="result"></span>
+            <span id="result"></span>
         </div>
         <br>
         <br>
